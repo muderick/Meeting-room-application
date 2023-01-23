@@ -1,0 +1,707 @@
+@font-face {
+  font-family: "Gotham pro";
+  src: url("GothamPro");
+  src: local("Gotham Pro Bold"), local("GothamPro-Bold"),
+    url("GothamPro-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/assets/GothamPro/GothamPro-Bold.woff2") format("woff2"),
+    url("/assets/GothamPro/GothamPro-Bold.woff") format("woff"),
+    url("GothamPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham pro";
+  src: url("GothamPro-Medium.eot");
+  src: local("Gotham Pro Medium"), local("GothamPro-Medium"),
+    url("GothamPro-Medium.eot?#iefix") format("embedded-opentype"),
+    url("/assets/GothamPro/GothamPro-Medium.woff2") format("woff2"),
+    url("/assets/GothamPro/GothamPro-Medium.woff") format("woff"),
+    url("GothamPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham pro";
+  src: url("GothamPro.eot");
+  src: local("Gotham Pro"), local("GothamPro"),
+    url("GothamPro.eot?#iefix") format("embedded-opentype"),
+    url("/assets/GothamPro/GothamPro.woff2") format("woff2"),
+    url("/assets/GothamPro/GothamPro.woff") format("woff"),
+    url("GothamPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --nav-bg: #00337f;
+  --height: 100%;
+  --width: 100%;
+  --transition: 500ms;
+}
+
+body {
+  min-height: var(--height);
+  display: flex;
+  margin: 0;
+  font-family: "Gotham pro";
+}
+
+.nav {
+  margin: 0;
+  background-color: var(--nav-bg);
+  height: var(--height);
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 32px;
+  position: fixed;
+  width: 280px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  color: #c9c9c9;
+  font-family: "Gotham";
+  overflow-x: hidden;
+}
+
+.top_nav {
+  display: flex;
+  align-items: center;
+}
+
+.top_nav {
+  gap: 13px;
+  height: auto;
+}
+
+.hr {
+  height: 0px;
+  border: 0.4px solid #c9c9c9;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
+  margin: 24px 0 24px 0;
+}
+
+.kplc_icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.icon {
+  left: 20.83%;
+  right: 20.83%;
+  top: 8.33%;
+  bottom: 8.33%;
+
+  /* Text light */
+
+  background: transparent;
+  transition: var(--transition);
+}
+
+.vertical_hr {
+  border-left: 2px solid #c9c9c9;
+  height: 1.4rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.app--title {
+  display: grid;
+  height: auto;
+  font-weight: 400;
+  font-size: 14px;
+  max-width: 10rem;
+  font-weight: 500;
+  font-family: "Gotham pro";
+  letter-spacing: 0.5px;
+}
+
+.nav--links {
+  margin: 2rem 0 2rem 0;
+  gap: 24px;
+  font-family: "gotham pro";
+}
+
+.block {
+  display: block;
+}
+
+ul.nav-menu {
+  list-style: none;
+  line-height: 2rem;
+  padding: 0;
+}
+
+.icon:hover {
+  fill: #00337f;
+  opacity: 0.5;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+li > a {
+  text-decoration: none;
+  color: #c9c9c9;
+}
+
+
+
+.top_bar {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  width: 900px;
+  height: 88px;
+}
+
+.signing {
+  margin-top: auto;
+  margin-bottom: auto;
+  gap: 1rem;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  color: #c9c9c9;
+  line-height: 2rem;
+  transition: var(--transition);
+  width: 100%;
+  font-family: "Gotham pro";
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #034da3;
+  color: #f3f9ff;
+  /* opacity: 0.5; */
+}
+
+.nav-menu .active{
+    background: #034DA3;
+    color: #F3F9FF;
+}
+
+.icon--frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.ml-12 {
+  margin-left: 18px;
+}
+
+.copyright {
+  margin: 24px 0 24px 0px;
+  font-size: 14px;
+}
+
+.mode {
+  border-radius: 6px;
+  background-color: var(--primary-color-light);
+  position: relative;
+  transition: var(--tran-05);
+}
+
+.menu-bar .mode .sun-moon {
+  height: 50px;
+  width: 60px;
+}
+
+.mode .sun-moon i {
+  position: absolute;
+}
+.mode .sun-moon i.sun {
+  opacity: 0;
+}
+body.dark .mode .sun-moon i.sun {
+  opacity: 1;
+}
+body.dark .mode .sun-moon i.moon {
+  opacity: 0;
+}
+
+/* END OF SIDEBAR */
+
+.content {
+  margin-left: 360px;
+  min-height: 100%;
+}
+
+.profile--image{
+  padding-top: 16px;
+}
+
+.hello--user {
+  padding-top: 24px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.profile-image_div {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+}
+
+.profile_pic {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50px;
+  margin-right: 12px;
+}
+
+.logout button{
+  padding: 12px 24px;
+  background-color: #FFCF01;
+  border: none;
+  color: #001124;
+  font-family: 'Gotham', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  border-radius: 4px;
+  align-self: flex-end;
+}
+
+.rooms {
+  /* position: relative;
+  
+  padding: 20px; */
+  width: 960px;
+  overflow: hidden;
+  /* z-index: -999; */
+  /* position: fixed; */
+}
+
+.top_bar {
+  display: flex;;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+  margin-top: 0.5rem;
+}
+
+.top-bar{
+  width: 960px;
+  height: 90px;
+}
+
+.signing {
+  margin-top: auto;
+  margin-bottom: auto;
+  gap: 1rem;
+}
+
+.greetings {
+  font-family: "Gotham pro";
+  font-style: bold;
+  font-weight: 400;
+  font-size: 32px;
+
+  /* Dark */
+  color: #001124;
+}
+
+.pic--name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.greetings p {
+  margin: 0;
+  justify-self: center;
+}
+
+.notification {
+  margin: auto;
+}
+
+.sign_in {
+  padding: 0.3rem;
+  margin: auto;
+  border-radius: 4px;
+}
+
+.sign_out {
+  padding: 0.3rem;
+  margin: auto;
+  border-radius: 4px;
+}
+
+.sign_in:hover {
+  cursor: pointer;
+  background-color: #ffcf01;
+}
+.sign_out:hover {
+  cursor: pointer;
+  background-color: #ffcf01;
+}
+.book_hr {
+  border: 1px solid #c9c9c9;
+  /* margin: 10px 0 10px 0; */
+}
+
+.header {
+  margin: 24px 0;
+  gap: 0.5rem;
+  display: flex;
+}
+
+.header--menu {
+  font-family: "Gotham pro";
+  letter-spacing: 1px;
+}
+
+.nav--home .nav--book {
+  font-family: "Gotham pro", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+/* .flex{
+  padding: 8px;
+} */
+
+.header > h2 {
+  letter-spacing: 0.02em;
+  font-family: "Gotham pro";
+  font-weight: 600;
+  color: #2e2e2e;
+  margin-top: 7.6px;
+  margin-bottom: 7.6px;
+  font-size: 18px;
+}
+
+.vertical_hr_booking {
+  border-left: 2px solid #2e2e2e;
+  height: 2rem;
+  margin-bottom: auto;
+}
+
+.room-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+.room-container {
+  display: flex;
+  width: 1031px;
+  height: 70%;
+  left: 369px;
+  top: 160px;
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+}
+
+.room-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.no-scroll {
+  padding-bottom: 30px;
+  overflow-x: auto;
+}
+
+.all--rooms{
+  font-size: 5rem;
+}
+
+.room-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 205px;
+  height: 420px;
+  left: 0px;
+  top: 24px;
+  padding: 12px 12px;
+  gap: 12px;
+  background: transparent;
+  border: 0.5px solid #878787;
+  border-radius: 4px;
+  margin-right: 40px;
+  font-family: 'Gotham pro', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.room-image {
+  position: relative;
+  /* left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%; */
+  overflow: hidden;
+  /* margin: auto; */
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.room-name {
+  /* width: 158px;
+  height: 26px; */
+
+  /* Emphasized */
+
+  font-family: "Gotham pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  /* line-height: 130%; */
+  /* identical to box height, or 26px */
+
+  letter-spacing: 0.02em;
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.room-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  font-weight: 500;
+
+  width: 99px;
+  height: fit-content;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+}
+
+.book-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 8px;
+
+  width: 157px;
+  height: fit-content;
+  font-family: 'Gotham pro', Tahoma, Geneva, Verdana, sans-serif;
+
+
+  /* primary */
+
+  background: #00337f;
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 7;
+  flex-grow: 0;
+  color: #f3f9ff;
+  border: none;
+  letter-spacing: 0.02em;
+  transition: var(--transition);
+}
+
+
+.book-btn_disabled {
+  background: rgba(0, 51, 127, 0.8);
+}
+
+ .book-btn:hover {
+  background: #034DA3;
+  color: #F3F9FF;
+}
+
+
+
+.room-tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 12px;
+  gap: 8px;
+  font-size: 12px;
+  width: fit-content;
+  letter-spacing: .5px;
+  height: 22px;
+
+  /* Success */
+
+  background: #03b03e;
+  color: #F3F9FF;
+  border-radius: 50px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.room-tag_disabled {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: .5px;
+  padding: 4px 12px;
+
+  
+
+  /* Success */
+
+  background: #F8B50B;
+  border-radius: 50px;
+  color: #001124;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.room-card_hr {
+  width: 157px;
+  /* height: .5px; */
+
+  /* Grey */
+
+  border: .5px solid grey;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin: 16px 0 16px 0;
+}
+
+.room-details > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+
+  width: 182px;
+  height: 88px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+}
+
+.room-details > li {
+  width: 182px;
+  height: 19px;
+
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 157.52%;
+  /* identical to box height, or 19px */
+
+  letter-spacing: 0.05em;
+
+  /* Text */
+
+  color: #2E2E2E;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  list-style: none;
+}
+
+.prev-btn,
+.next-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(50deg, rgba(255, 255, 255, 0) 0%, #fff 100%); */
+  cursor: pointer;
+  z-index: 9;
+  background: transparent;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+.prev-btn object,
+.next-btn object {
+  opacity: 0.2;
+}
+
+.prev-btn:hover object,
+.next-btn:hover object {
+  opacity: 1;
+}
+
+.dots {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 3px;
+  background-color: #acc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}

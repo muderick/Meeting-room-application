@@ -1,0 +1,391 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('GothamPro');
+    src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+        url('GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/GothamPro/GothamPro-Bold.woff2') format('woff2'),
+        url('/assets/GothamPro/GothamPro-Bold.woff') format('woff'),
+        url('GothamPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('GothamPro-Medium.eot');
+    src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
+        url('GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/assets/GothamPro/GothamPro-Medium.woff2') format('woff2'),
+        url('/assets/GothamPro/GothamPro-Medium.woff') format('woff'),
+        url('GothamPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('GothamPro.eot');
+    src: local('Gotham Pro'), local('GothamPro'),
+        url('GothamPro.eot?#iefix') format('embedded-opentype'),
+        url('/assets/GothamPro/GothamPro.woff2') format('woff2'),
+        url('/assets/GothamPro/GothamPro.woff') format('woff'),
+        url('GothamPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --nav-bg: #00337F;
+    --height: 100%;
+    --width: 100%;
+    --transition: 500ms;
+}
+
+body {
+    min-height: var(--height);
+    /* min-width: var(--width); */
+    display: flex;
+    margin: 0;
+}
+
+.nav {
+    margin: 0;
+    background-color: var(--nav-bg);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 28px;
+    width: 21%;
+    left: 0px;
+    top: 0px;
+    color: #c9c9c9;
+    font-family: 'Gotham';
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.nav-menu {
+    list-style: none;
+    line-height: 2rem;
+}
+
+.top_nav {
+    gap: 13px;
+    height: auto;
+}
+
+.vertical_hr {
+    border-left: 2px solid #C9C9C9;
+    height: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.vertical_hr_booking {
+    border-left: 2.5px solid #2E2E2E;
+    height: 1rem;
+    margin-bottom: auto
+}
+
+.kplc_icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.icon {
+    left: 20.83%;
+    right: 20.83%;
+    top: 8.33%;
+    bottom: 8.33%;
+
+    /* Text light */
+
+    background: transparent;
+    transition: var(--transition);
+}
+
+.icon:hover {
+    fill: #00337F;
+    opacity: 0.5;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.block {
+    display: block;
+}
+
+.header {
+
+    gap: 0.5rem;
+    display: flex;
+}
+
+.ml-12 {
+    margin-left: 12px;
+}
+
+li>a {
+    text-decoration: none;
+    color: #c9c9c9;
+}
+
+.hr {
+    /* Line 2 */
+    height: 0px;
+
+    /* Text light */
+
+    border: 1px solid #C9C9C9;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+    margin: 20px 0 20px 0;
+}
+
+.content {
+    min-height: 100%;
+    width: 79%;
+}
+
+.btn {
+    background: transparent;
+    border: none;
+    border-radius: 0.5rem;
+    color: #C9C9C9;
+    line-height: 2rem;
+    transition: var(--transition);
+    width: 100%;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #C9C9C9;
+    color: #00337F;
+    opacity: 0.5;
+}
+
+.book_room {
+    overflow: hidden;
+}
+
+.top_bar {
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+
+.signing {
+    margin-top: auto;
+    margin-bottom: auto;
+    gap: 1rem;
+}
+
+.greetings {
+    font-family: 'Gotham Pro';
+    font-style: bold;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 140%;
+
+    /* Dark */
+    color: #001124;
+}
+
+.header>h2 {
+    letter-spacing: 0.02em;
+    font-family: Gotham pro;
+    font-weight: 400;
+    color: #2E2E2E;
+    margin-top: 7.6px;
+}
+
+.general_booking-form {
+    gap: 42px;
+    margin-bottom: 24px;
+}
+
+.input--container{
+    height: 380px;
+}
+
+.input--container label{
+    font-weight: 500;
+    color: #2E2E2E;
+}
+.form1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 239px;
+    height: 377px;
+    margin-top: auto;
+    width: 40%;
+}
+
+.form1 input{
+    font-family: 'Gotham pro', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    /* identical to box height, or 21px */
+
+    /* Dark */
+    color: #001124;
+
+
+}
+
+.rmName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+}
+
+.rname{
+    font-family: 'Gotham pro', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.dept {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+}
+
+.floor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+}
+
+.phase {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+}
+
+.cal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+}
+
+.start_time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+}
+
+.end_time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+}
+
+input {
+    padding: 12px;
+    width: fit-content;
+}
+
+
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 255px;
+    height: 349px;
+}
+
+input::placeholder {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    /* identical to box height, or 21px */
+
+    /* Text */
+    color: #2E2E2E;
+}
+
+.book_hr {
+    border: 1px solid #C9C9C9;
+    margin: 24px 0 10px 0;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.notification {
+    margin: auto;
+}
+
+.submit_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    margin-bottom: 48px;
+    gap: 8px;
+
+    font-family: 'Gotham pro', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Accent */
+    background: #009453;
+    border-radius: 4px;
+    border: none;color: white;
+}
+
+.sign_in {
+    margin: auto;
+}
+
+.sign_out {
+    padding: 0.3rem;
+    margin: auto;
+}
+
+.sign_in,
+.sign_out:hover{
+    cursor: pointer;
+}

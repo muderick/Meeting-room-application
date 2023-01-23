@@ -1,0 +1,78 @@
+.settings--content{
+    display: flex;
+    gap: 80px;
+    top: 8px;
+}
+
+.my--profile{
+    margin-top: 0;
+    font-size: 16px;
+    color: #2E2E2E;
+}
+
+.profile--photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+
+.photo{
+    width: 70px;
+    height: 70px;
+}
+
+.change--photo{
+    padding: 8px 12px;
+    background-color: #009453;
+    color: #F3F9FF;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Gotham pro', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+
+}
+
+.username{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: 'Gotham pro', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 24px;
+}
+
+.username label{
+    font-family: 'Gotham pro', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2E2E2E;
+}
+
+.username input{
+    font-family: 'Gotham pro', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.input--username, .input--npassword, .input--cpassword{
+    padding: 8px 12px;
+    width: 240px;
+}
+
+.btn--savechanges{
+    width: fit-content;
+    padding: 12px 16px;
+    font-family: 'Gotham pro', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: #00337F ;
+    color: #F3F9FF;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+/* style="width: 239px" style="font-family:'Gotham pro';" */

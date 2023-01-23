@@ -1,0 +1,397 @@
+@font-face {
+    font-family: 'Gotham pro';
+    src: url('GothamPro.eot');
+    src: local('Gotham Pro'), local('GothamPro'),
+        url('../css/fonts/gotham/GothamPro.woff2') format('woff2'),
+        url('../css/fonts/gotham/GothamPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham pro';
+    src: url('GothamPro-Medium.eot');
+    src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
+        url('../css/fonts/gotham/GothamPro-Medium.woff2') format('woff2'),
+        url('./fonts/gotham/GothamPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham pro';
+    src: url('GothamPro-Bold.eot');
+    src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+        url('./fonts/gotham/GothamPro-Bold.woff2') format('woff2'),
+        url('./fonts/gotham/GothamPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Gotham pro', sans-serif;
+    overflow: auto;
+    font-size: 1.6rem;
+    background-color: var(--light-color);
+}
+
+:root{
+    --primary-color: #00337F;
+    --secondary-color:#FFCF01;
+    --accent-color:#009453;
+    --success-color:#03B03E;
+    --error-color:#D60D0D;
+    --warning-color:#F5B40D;
+    --dark-color:#001124;
+    --lighter-color:#A2B8D9;
+    --light-color:#F3F9FF;
+    --text-color:#2E2E2E;
+    --text-light-color:#C9C9C9;
+    --black-color:#000000;
+    --grey-color:#878787;
+    --white-color:#ffffff;
+}
+
+/* Onboarding section */
+
+
+
+.onboarding-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.steps{
+    height: 100vh;
+    display: flex;
+    left: 50%;
+    right: 50%;
+
+}
+
+.step{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: pink; */
+    margin: 2rem;
+}
+
+.hello_title h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.hello_description{
+    margin-top: 0;
+    text-align: center;
+    max-width: 32rem;
+    color: var(--grey-color);
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 3.2rem;
+}
+
+
+
+.hello_btn_next{
+    width: auto;
+    background:var(--primary-color);
+    color: var(--light-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Gotham pro', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    margin: 0 2.4rem 4rem 2.4rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.hello_btn_back{
+    width: auto;
+    background:var(--light-color);
+    color: var(--dark-color);
+    font-family: 'Gotham pro', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.dots{
+    display: flex;
+}
+
+.dot.active{
+    height: .8rem;
+    width: .8rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    margin: 0 .4rem;
+}
+
+.dot{
+    height: .8rem;
+    width: .8rem;
+    border-radius: 50%;
+    background-color: var(--lighter-color);
+    margin: 0 .4rem;
+}
+
+
+/* Sign up page */
+
+/* .signup-section{
+    background: dodgerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} */
+
+/* .container{
+    max-width: 30rem;
+    background: pink; */
+    /* height: 100vh;
+} */
+/* 
+.signup-title{
+    font-size: 4rem;
+    color: var(--dark-color);
+}
+
+
+.signup-form label{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.username-label{
+    padding-bottom: 0.8rem;
+
+}
+
+.signup-form input{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--dark-color);
+    padding: 1.2rem;
+    border-radius: 4px;
+}
+
+.btn-submit{
+    max-width: 24rem;
+}
+
+.email{
+
+} */
+
+.container{
+    /* background: var(--lighter-color); */
+    max-width: 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.signup-title{
+    font-size: 3.2rem;
+}
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: var(--lighter-color); */
+    max-width: rem;
+    padding-bottom: .8rem;
+}
+
+.email label{
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+
+.email input{
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 1.2rem .8rem;
+    font-family: 'Gotham pro';
+    width: 24rem;
+    border: 1.2px solid var(--primary-color);
+    border-radius: 4px;
+    margin-bottom: .8rem;
+
+}
+
+.email-info-label{
+    font-size: 1.4rem;
+    color: var(--error-color);
+    letter-spacing: .2px;
+
+    /* visibility: hidden; */
+    display: none;
+}
+
+.username{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: var(--lighter-color); */
+    max-width: rem;
+    padding-bottom: .8rem;
+    
+}
+
+.username label{
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+
+.username input{
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 1.2rem .8rem;
+    font-family: 'Gotham pro';
+    width: 24rem;
+    border: 1.2px solid var(--primary-color);
+    border-radius: 4px;
+    margin-bottom: .8rem;
+
+}
+
+.username-info-label{
+    font-size: 1.4rem;
+    color: var(--error-color);
+    font-weight: normal;
+    letter-spacing: .2px;
+    /* visibility: hidden; */
+    /* display: none; */
+}
+
+.password{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: var(--lighter-color); */
+    max-width: rem;
+    padding-bottom: .8rem;
+}
+
+.password label{
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+
+.password input{
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 1.2rem .8rem;
+    font-family: 'Gotham pro';
+    width: 24rem;
+    border: 1.2px solid var(--primary-color);
+    border-radius: 4px;
+    margin-bottom: .8rem;
+
+}
+
+.password-info-label{
+    font-size: 1.4rem;
+    color: var(--error-color);
+    letter-spacing: .2px;
+    /* visibility: hidden; */
+    /* display: none; */
+}
+
+.retype{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: var(--lighter-color); */
+    max-width: rem;
+    padding-bottom: .8rem;
+}
+
+.retype label{
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+
+.retype input{
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 1.2rem .8rem;
+    font-family: 'Gotham pro';
+    width: 24rem;
+    border: 1.2px solid var(--primary-color);
+    border-radius: 4px;
+    margin-bottom: .8rem;
+
+}
+
+.retype-info-label{
+    font-size: 1.4rem;
+    color: var(--success-color);
+    letter-spacing: .2px;
+    /* visibility: hidden; */
+    /* display: none; */
+}
+
+.btn-submit{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-size: 1.6rem;
+    font-family: 'Gotham pro';
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 1.2rem 9.6rem;
+    white-space: nowrap ;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 1.6rem;
+}
+
+.redirect-signin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redirect-signin span{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: .4rem;
+}
+
+.redirect-signin a{
+    font-size: 1.4rem;
+    font-weight: 500;
+}

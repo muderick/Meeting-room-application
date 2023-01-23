@@ -1,0 +1,833 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("GothamPro");
+  src: local("Gotham Pro Bold"), local("GothamPro-Bold"),
+    url("GothamPro-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/assets/GothamPro/GothamPro-Bold.woff2") format("woff2"),
+    url("/assets/GothamPro/GothamPro-Bold.woff") format("woff"),
+    url("GothamPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("GothamPro-Medium.eot");
+  src: local("Gotham Pro Medium"), local("GothamPro-Medium"),
+    url("GothamPro-Medium.eot?#iefix") format("embedded-opentype"),
+    url("/assets/GothamPro/GothamPro-Medium.woff2") format("woff2"),
+    url("/assets/GothamPro/GothamPro-Medium.woff") format("woff"),
+    url("GothamPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("GothamPro.eot");
+  src: local("Gotham Pro"), local("GothamPro"),
+    url("GothamPro.eot?#iefix") format("embedded-opentype"),
+    url("/assets/GothamPro/GothamPro.woff2") format("woff2"),
+    url("/assets/GothamPro/GothamPro.woff") format("woff"),
+    url("GothamPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --nav-bg: #00337f;
+  --height: 100%;
+  --width: 100%;
+  --transition: 500ms;
+  --font-family: "Gotham Pro";
+  --red-text: #e2001e;
+  --month-num: #c4c4c4;
+  --shadwo-month: #9e9e9e;
+  --month-border: #9e9e9e;
+  --backward-forward: #00000090;
+  --date-color: #313131;
+  --sunday: #ff0040;
+  --saturday: #2b62e2;
+  --left-month-name: #ef0000;
+  --right-month-color: #000000;
+  --gradient: linear-gradient(#f00, #aa0000);
+}
+
+body {
+  min-height: var(--height);
+  /* min-width: var(--width); */
+  display: flex;
+  margin: 0;
+}
+
+.nav {
+  margin: 0;
+  background-color: var(--nav-bg);
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 28px;
+  width: 21%;
+  left: 0px;
+  top: 0px;
+  color: #c9c9c9;
+  font-family: "Helvetica";
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.nav-menu {
+  list-style: none;
+  line-height: 2rem;
+}
+
+.top_nav {
+  gap: 13px;
+  height: auto;
+}
+
+.vertical_hr {
+  border-left: 2px solid #c9c9c9;
+  height: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.vertical_hr_booking {
+  border-left: 2px solid #2e2e2e;
+  height: 2rem;
+  margin-bottom: auto;
+}
+
+.kplc_icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.icon {
+  left: 20.83%;
+  right: 20.83%;
+  top: 8.33%;
+  bottom: 8.33%;
+
+  /* Text light */
+
+  background: transparent;
+  transition: var(--transition);
+}
+
+.icon:hover {
+  fill: #00337f;
+  opacity: 0.5;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.block {
+  display: block;
+}
+
+.header {
+  margin: 24px 0;
+  gap: 0.5rem;
+  display: flex;
+}
+
+.ml-12 {
+  margin-left: 12px;
+}
+
+li > a {
+  text-decoration: none;
+  color: #c9c9c9;
+}
+
+.hr {
+  /* Line 2 */
+  height: 0px;
+
+  /* Text light */
+
+  border: 1px solid #c9c9c9;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
+  margin: 20px 0 20px 0;
+}
+
+.content {
+  min-height: 100%;
+  width: 79%;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  color: #c9c9c9;
+  line-height: 2rem;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #c9c9c9;
+  color: #00337f;
+  opacity: 0.5;
+}
+
+.book_room {
+  overflow: hidden;
+  /* padding: 20px; */
+}
+
+.top_bar {
+  /* position: fixed; */
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  background-color: #Fff;
+}
+
+.signing {
+  margin-top: auto;
+  margin-bottom: auto;
+  gap: 1rem;
+}
+
+.greetings {
+  font-family: "Gotham";
+  font-style: bold;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 140%;
+
+  /* Dark */
+  color: #001124;
+}
+
+.header > h2 {
+  letter-spacing: 0.02em;
+  font-family: Gotham pro;
+  font-weight: 600;
+  color: #2e2e2e;
+  margin-top: 7.6px;
+  margin-bottom: 7.6px;
+  font-size: 18px;
+}
+
+.cal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+
+.book_hr {
+  border: 1px solid #c9c9c9;
+  margin: 24px 0 10px 0;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.notification {
+  margin: auto;
+}
+
+.sign_in {
+  padding: 0.3rem;
+  margin: auto;
+  border-radius: 4px;
+}
+
+.sign_out {
+  padding: 0.3rem;
+  margin: auto;
+  border-radius: 4px;
+}
+
+.sign_in:hover {
+  cursor: pointer;
+  background-color: #ffcf01;
+}
+.sign_out:hover {
+  cursor: pointer;
+  background-color: #ffcf01;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 85%;
+  overflow: hidden;
+  /* background-color: pink; */
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 80%;
+  height: 60px;
+  margin-bottom: 8px;
+}
+.left .heading {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.left .heading-line {
+  margin-top: 5px;
+  width: 45%;
+  height: 4px;
+  border: 1px solid #ff0040;
+  border-radius: 3px;
+}
+.left .wrapper {
+  width: 80%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.left .top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 23%;
+  width: 100%;
+}
+.left .top .year-num {
+  font-family: "Gotham";
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #009453;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.year-num {
+  color: #009453;
+}
+
+.left .backward,
+.left .forward {
+  font-family: "Gotham";
+  cursor: pointer;
+  width: 33%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--backward-forward);
+}
+.left .button {
+  display: none;
+  background: var(--light-bg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  width: 95%;
+  padding: 15px;
+  box-shadow: 0 0 25px var(--shadwo-month);
+  border-radius: 7.5px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.left .button.animation {
+  animation: 0.3s animate linear;
+}
+.left .month-num {
+  color: var(--month-num);
+  font-size: 40px;
+  font-weight: bold;
+}
+.left .month-name {
+  font-family: "Gotham";
+  font-size: 12px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: var(--left-month-name);
+}
+.border {
+  width: 60%;
+  height: 1px;
+  background: var(--month-border);
+  margin: 5px 0px;
+}
+.left .button .bar,
+.left .button .dates {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  grid-gap: 10px;
+  grid-row-gap: 8px;
+  justify-items: center;
+  align-items: center;
+  font-size: 15px;
+  color: var(--date-color);
+}
+.left .button .dates {
+  grid-template-rows: repeat(6, 1fr);
+}
+.bar {
+  font-weight: bold;
+  font-family: "Gotham";
+}
+
+.bar p {
+  margin: 9px;
+}
+
+.day {
+  margin: 5px;
+  font-family: "Gotham";
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.sunday {
+  color: var(--sunday);
+}
+.saturday {
+  color: var(--saturday);
+}
+
+/* right side designe */
+
+.right {
+  width: 94%;
+  height: 380px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 12px 0;
+  padding: 0 10px 0 0;
+  overflow-y: scroll;
+  padding: 12px 0;
+  scrollbar-width: none;
+}
+
+.right::-webkit-scrollbar {
+  display: none;
+}
+
+.right .months {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 5px var(--shadwo-month);
+  padding: 30px 15px 15px 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 14rem;
+  height: 12rem;
+  margin: auto;
+  color: #2e2e2e;
+}
+.right .months:hover {
+  transform: scale(1.05);
+}
+
+.right .month-num {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  color: var(--month-num);
+  font-weight: bold;
+  font-size: 35px;
+}
+.right .month-name {
+  font-family: "Gotham";
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: var(--right-month-color);
+  /* margin:auto; */
+}
+.right .border {
+  margin: 4px 2px;
+  background-color: var(--month-border);
+  width: 80%;
+}
+.right .bar,
+.right .dates {
+  width: 55%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  font-size: 10px;
+  color: var(--date-color);
+}
+.right .dates {
+  grid-template-rows: repeat(7, 1fr);
+}
+@keyframes animate {
+  0% {
+    transform: scale(0.85);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 1060px) {
+  body {
+    overflow-y: scroll;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left .button {
+    display: none;
+  }
+  .left {
+    height: 90px;
+  }
+  .left .wrapper {
+    height: 90px;
+  }
+  .right {
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .right {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: auto;
+  }
+  .left {
+    position: static;
+  }
+  .left .backward,
+  .left .forward {
+    font-size: 20px;
+    text-align: right;
+    padding: 20px;
+  }
+  .left .forward {
+    text-align: left;
+  }
+}
+
+.calender {
+  display: flex;
+  z-index: -99;
+}
+
+.calender_inner {
+  width: 80%;
+}
+
+.timeline {
+  width: 35%;
+  margin-left: auto;
+  font-family: "Gotham";
+  overflow: hidden;
+}
+
+.events {
+  padding: 0.5rem 0;
+}
+
+.event {
+  list-style: none;
+}
+
+.event h4 {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.05em;
+}
+
+.event h6 {
+  font-size: 12px;
+  color: #2e2e2e;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  margin:19.405px 0;
+}
+
+.event p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #878787;
+  letter-spacing: 0.05em;
+}
+
+.meeting_header > h3 {
+  font-family: "Gotham";
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.meeting_header > h5 {
+  font-family: "Gotham";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.completed_data {
+  font-family: "Gotham";
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+}
+
+.completed_data > p {
+  margin:19.405px 0;
+}
+
+.todays_data {
+  font-family: "Gotham";
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+}
+
+.todays_data > p {
+  margin: 19.405px 0;
+}
+
+.future_data {
+  font-family: "Gotham";
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+}
+
+.future_data > p {
+  margin: 19.405px 0;
+}
+
+.completed {
+  padding-left: 10px;
+}
+
+.today {
+  padding-left: 10px;
+}
+
+.future {
+  padding-left: 10px;
+}
+
+.timeline li {
+  list-style: none;
+  position: relative;
+  width: 2px;
+  padding-top: 0.5rem;
+  background: #00337f;
+}
+
+.timeline ul li::after {
+  content: ""; /* The content attribute is required for pseudo-elements to render */
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: inherit; /* inherits this property from its parent element */
+}
+
+/* Content box */
+.timeline ul li div {
+  width: max-content;
+  position: relative;
+  bottom: 0;
+  padding: 1.5rem;
+  /*glassmorphism effect*/
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/*This is to select the divs at odd position so we can separate the divs to the right-hand side of the timeline*/
+.timeline ul li:nth-child(odd) div {
+  left: 45px; /* this style pushes the divs at odd number position to the right */
+}
+
+/*this showcases the triangle for the event-cards at the odd number position*/
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent lightblue transparent transparent;
+}
+
+/*This is to select the divs at an even number position so we can separate the divs to the left-hand side of the timeline*/
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+/*this showcases the triangle for the event-cards at the odd number position*/
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent lightblue;
+}
+
+.timeline ul li::after {
+  transition: all 0.5s ease-in-out;
+}
+
+/*this changes the node content..giving it a background of white and making the border thicker*/
+.timeline ul li.slide-in::after {
+  background: var(--white);
+  border: 3px solid var(--light-blue);
+}
+
+/* Hide event card initially */
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translateX(20rem);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translateX(-20rem);
+}
+
+/* display the event card */
+.timeline ul li.slide-in div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Tablet Width */
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 25rem;
+  }
+
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+  }
+}
+
+/* Mobile width */
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 2rem;
+  }
+
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent var(--light-blue) transparent transparent;
+  }
+}
+
+.meeting_header h3{
+  text-decoration: none;
+}
+
+.completed{
+  border-left: 2px solid #000000;
+  padding-left: 24px;
+}
+
+ .completed::before{
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color:#D60D0D ;
+  position: relative;
+  right: 28px;
+  overflow: visible;
+}
+.today{
+  border-left: 2px solid #000000;
+  padding-left: 24px;
+}
+
+ .today::before{
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color:#FFCF01 ;
+  position: relative;
+  right: 28px;
+  overflow: visible;
+}
+.future{
+  border-left: 2px solid #000000;
+  padding-left: 24px;
+}
+
+ .future::before{
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color:#009453;
+  position: relative;
+  right: 28px;
+  overflow: visible;
+}
+
+/* .header{
+  position: fixed;
+} */
+
+
+
