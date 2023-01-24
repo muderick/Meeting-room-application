@@ -1,4 +1,4 @@
-## Meeting-room-application
+## Meeting-room-app
 #### Requirements:
   1. [Install Xampp Server](https://www.apachefriends.org/download.html)  
 
