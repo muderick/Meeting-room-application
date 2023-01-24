@@ -1,6 +1,6 @@
 ## Meeting-room-application
 #### Requirements:
-  1. Xampp Server  
+  1. [Install Xampp Server](https://www.apachefriends.org/download.html)  
 
 To preview:
   1. Download the project and save it in htdocs in the xampp folder,  
